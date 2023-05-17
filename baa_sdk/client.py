@@ -48,7 +48,7 @@ class RawClient:
 
     def get_header(self):
         header = {
-            "X-Api-Key": self.api_key,
+            "Authorization": self.api_key,
             "Accept": "application/vnd.siren+json"
         }
         if self.added_headers is not None:
